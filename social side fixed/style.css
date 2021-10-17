@@ -1,0 +1,118 @@
+/* all setting social */
+#btn{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 350px;
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transition: all .5s ease-in-out;
+    border: 1px solid rgb(194, 194, 194);
+}
+#btn a{
+    margin-top: 5px;
+    text-decoration: none;
+    text-align: center;
+    color:rgb(72, 72, 72);
+    font-size: 35px;
+    transition: all .5s ease-in-out;
+}
+/* hovers------------ */
+#btn:hover{
+    background-color: skyblue;
+    transform: rotate(360deg);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+   }
+   #btn a:hover{
+    color: black;
+   }
+
+
+#myDIV{
+    display: none;
+}
+/* ----------------------icons-------------- */
+
+.icon-bar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 250px;
+}
+.icon-bar a{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/*-------------- Close button ---------------*/
+
+.close{
+   
+    background-color: rgb(255, 255, 255);
+    color: red;
+    transition: all .5s ease-in-out;
+}
+.close:hover{
+    color: rgb(247, 247, 247);
+    background-color: #df0000;
+    transform: rotate(360deg);
+}
+
+/* ---------------social icons--------------- */
+
+.facebook{
+    transition: all .5s ease-in-out;
+    color: white;
+    background-color: #365493;
+}
+
+.telegram{
+    transition: all 1s ease-in-out;
+    color: white;
+    background-color: #37aee2;
+}
+
+.youtube{
+    transition: all 1s ease-in-out;
+    color: white;
+    background-color:#df0000 ;
+}
+.instagram{
+    transition: all 1s ease-in-out;
+    color: white;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+/* --------------social icons hovers-------------- */
+
+.facebook:hover{
+    color: #365493;
+    background-color: white;
+    transform:rotate(360deg);
+}
+
+.telegram:hover{
+    color: #37aee2;
+    background-color: white;
+    transform:rotate(360deg);
+}
+
+.youtube:hover{
+    color: #df0000;
+    background-color: white;
+    transform:rotate(360deg);
+}
+.instagram:hover{
+    color: #d6249f;
+    background: white;
+    transform:rotate(360deg);
+}

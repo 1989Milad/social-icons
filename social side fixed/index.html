@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social</title>
+</head>
+<body>
+    <!-- ---------main Button------- -->
+    <span id="btn"><a href="#"><i class="fa fa-comments-o"></i>
+    </a></span> 
+
+    <!-- div for icons to show flex -->
+    <div class="icon-bar" id="myDIV">
+        <!-- social Icons  -->
+       <!--facebook--> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+        <!--instagram--><a href="https://instagram.com/mahd_mahemehr?utm_medium=copy_link" class="instagram"><i class="fa fa-instagram"></i></a>
+        <!--youtube--><a href="" class="youtube"><i class="fa fa-youtube"></i></a> 
+        <!--telegram--><a href="https://t.me/mahdemahemehr" class="telegram"><i class="fa fa-telegram"></i></a> 
+       <!--Close button--> <a href="#" class="close"><i class="fa fa-close"></i></a> 
+      </div>
+      <!-- End div -->
+<script>
+    // ----------------jQuery Codes-----------//
+
+ $(document).ready(function(){
+
+     // ---------variables is here --------------//
+    var btn = '#btn';
+    var social = '.icon-bar';
+    var close = '.close'
+// --------------- when click on social button hide and show social icons--------------//
+
+    // main button ------//
+     $(btn).click(function(){    
+         // set icons flex diplay------//
+         $(social).toggle().css('display','flex');
+         // set to show---------//
+        if($(social).css('display','flex')){
+            // set to hide button -----------//
+            $(btn).hide();
+        }      
+      
+     });
+     // Close button ----//
+     $(close).click(function(){
+         // set hide icons ------//
+        if($(social).css('display','none')){
+            // shoow main button -----//
+            $(btn).show(200);
+        }
+     });
+ });
+</script>
+<!-- End Scripts  -->
+</body>
+</html>
+
