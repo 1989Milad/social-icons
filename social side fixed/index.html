@@ -18,9 +18,9 @@
     <div class="icon-bar" id="myDIV">
         <!-- social Icons  -->
        <!--facebook--> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-        <!--instagram--><a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <!--youtube--><a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
-        <!--telegram--><a href="#" class="telegram"><i class="fa fa-telegram"></i></a> 
+        <!--instagram--><a href="https://instagram.com/mahd_mahemehr?utm_medium=copy_link" class="instagram"><i class="fa fa-instagram"></i></a>
+        <!--youtube--><a href="" class="youtube"><i class="fa fa-youtube"></i></a> 
+        <!--telegram--><a href="https://t.me/mahdemahemehr" class="telegram"><i class="fa fa-telegram"></i></a> 
        <!--Close button--> <a href="#" class="close"><i class="fa fa-close"></i></a> 
       </div>
       <!-- End div -->
@@ -36,22 +36,25 @@
 // --------------- when click on social button hide and show social icons--------------//
 
     // main button ------//
-     $(btn).click(function(){    
+     $(btn).hover(function(){   
          // set icons flex diplay------//
-         $(social).toggle().css('display','flex');
+        $(social).show(800); 
+
          // set to show---------//
         if($(social).css('display','flex')){
             // set to hide button -----------//
-            $(btn).hide();
+            $(btn).hide(500);
+            
         }      
       
      });
      // Close button ----//
      $(close).click(function(){
          // set hide icons ------//
-        if($(social).css('display','none')){
+        if($(social).hide(100)){
             // shoow main button -----//
-            $(btn).show(200);
+            $(btn).show(500);
+            
         }
      });
  });
