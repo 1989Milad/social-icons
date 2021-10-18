@@ -5,21 +5,36 @@
     flex-direction: column;
     right: 0;
     top: 350px;
-    background-color: pink;
+    background-color: cadetblue;
     width: 70px;
-    height: 50px;
+    height: 70px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     transition:all .5s cubic-bezier(.79,.01,0,1.89);
     border: 1px solid rgb(194, 194, 194);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
 }
 #btn a{
-    margin-top: 5px;
+    margin-top: 15px;
     text-decoration: none;
     text-align: center;
-    color:rgb(72, 72, 72);
+    color:rgb(228, 228, 228);
     font-size: 35px;
     transition: all .5s ease-in-out;
+    animation:shake-s 5s infinite alternate;
+}
+/*animation */
+@keyframes shake-s{
+    0%{transform: rotate(-30deg);}    
+    10%{transform: rotate(20deg);}    
+    30%{transform: rotate(0deg);}    
+    50%{transform: rotate(0deg);}    
+    60%{transform: rotate(0deg);}    
+    70%{transform: rotate(0deg);}    
+    80%{transform: rotate(0deg);}    
+    90%{transform: rotate(0deg);}    
+    100%{transform: rotate(1turn);}    
 }
 /* hovers------------ */
  #btn:hover{
@@ -42,6 +57,7 @@
     flex-direction: column;
     right: 0;
     top: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 .icon-bar a{
     padding: 15px;
